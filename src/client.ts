@@ -55,28 +55,30 @@ emitter.on('message', (message) => {
       break;
   }
 });
-
+/**
+ * Configuración del comando add mediante yargs
+ */
 yargs.command({
   command: 'add',
-  describe: 'Add a new note',
+  describe: 'Añadir una nueva nota',
   builder: {
     user: {
-      describe: 'User name',
+      describe: 'Nombre de usuario',
       demandOption: true,
       type: 'string',
     },
     title: {
-      describe: 'Note title',
+      describe: 'Título de la nota',
       demandOption: true,
       type: 'string',
     },
     body: {
-      describe: 'Note body',
+      describe: 'Cuerpo de la nota',
       demandOption: true,
       type: 'string',
     },
     color: {
-      describe: 'Note color',
+      describe: 'Color de la nota',
       demandOption: true,
       type: 'string',
     },
@@ -100,19 +102,20 @@ yargs.command({
 });
 
 /**
- * Definicion del comando REMOVE
+ * Configuración del comando remove mediante yargs
  */
+
 yargs.command({
   command: 'remove',
-  describe: 'Remove a note',
+  describe: 'Eliminar una nota',
   builder: {
     user: {
-      describe: 'User name',
+      describe: 'Nombre de usuario',
       demandOption: true,
       type: 'string',
     },
     title: {
-      describe: 'Note title',
+      describe: 'Título de la nota',
       demandOption: true,
       type: 'string',
     },
@@ -133,29 +136,30 @@ yargs.command({
 });
 
 /**
- * Definicion del comando MODIFY
+ * Configuración del comando edit mediante yargs
  */
+
 yargs.command({
-  command: 'modify',
-  describe: 'Modify a note',
+  command: 'edit',
+  describe: 'Modifica una nota',
   builder: {
     user: {
-      describe: 'User name',
+      describe: 'Nombre de usuario',
       demandOption: true,
       type: 'string',
     },
     title: {
-      describe: 'Note title',
+      describe: 'Título de la nota',
       demandOption: true,
       type: 'string',
     },
     body: {
-      describe: 'Note body',
+      describe: 'Cuerpo de la nota',
       demandOption: true,
       type: 'string',
     },
     color: {
-      describe: 'Note color',
+      describe: 'Color de la nota',
       demandOption: true,
       type: 'string',
     },
@@ -179,19 +183,20 @@ yargs.command({
 });
 
 /**
- * Definicion del comando READ
+ * Configuración del comando read mediante yargs
  */
+
 yargs.command({
   command: 'read',
-  describe: 'Read a note',
+  describe: 'Leer una nota',
   builder: {
     user: {
-      describe: 'User name',
+      describe: 'Nombre de usuario',
       demandOption: true,
       type: 'string',
     },
     title: {
-      describe: 'Note title',
+      describe: 'Título de la nota',
       demandOption: true,
       type: 'string',
     },
@@ -212,14 +217,15 @@ yargs.command({
 });
 
 /**
- * Definicion del comando LIST
+ * Configuración del comando list mediante yargs
  */
+
 yargs.command({
   command: 'list',
-  describe: 'List all note',
+  describe: 'Listar las notas de un usuario',
   builder: {
     user: {
-      describe: 'User name',
+      describe: 'Nombre de usuario',
       demandOption: true,
       type: 'string',
     },

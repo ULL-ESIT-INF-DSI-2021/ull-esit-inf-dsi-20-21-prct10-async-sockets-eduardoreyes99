@@ -1,5 +1,8 @@
 import {EventEmitter} from 'events';
 
+/**
+ * Clase que hereda EventEmitter y que se encarga de almacenar un mensaje
+ */
 export class MessageEventEmitterClient extends EventEmitter {
   constructor(connection: EventEmitter) {
     super();
