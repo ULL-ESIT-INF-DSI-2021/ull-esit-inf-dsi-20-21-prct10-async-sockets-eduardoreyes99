@@ -53,7 +53,7 @@ export class MessageEventEmitterServer extends EventEmitter {
 
 Para la implementación de la parte del servidor utilizaremos la función **net.createserver**, esta función crea un objeto Server que haremos que nuestro servicio publique en el puerto 60300 utilizando **server.listen**. Para controlar el tipo de comando que se inserta desde el cliente se utilizará un switch que ejecutará la orden correspondiente dependiendo del atributo type del tipo de dato RequestType.
 
-(Código de Server)[https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct10-async-sockets-eduardoreyes99/blob/main/src/server.ts]
+[Código de Server](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct10-async-sockets-eduardoreyes99/blob/main/src/server.ts)
 
 ### Parte Cliente
 
@@ -154,11 +154,11 @@ yargs.command({
   },
 });
 ```
-(Código de Cliente)[https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct10-async-sockets-eduardoreyes99/blob/main/src/client.ts]
+[Código de Cliente](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct10-async-sockets-eduardoreyes99/blob/main/src/client.ts)
 
 ### Conclusión
 
-En esta práctica he aprendido a utilizar los paquetes yargs, chalks y la API síncrona de Node.js para gestión de ficheros para crear una aplicación interactiva que permita crear y eliminar ficheros en tiempo de ejecución, además se ha seguido el método de desarrollo TDD como viene siendo habitual y se ha incluido el cubrimiento de código utilizando GitHub Actions además de utilizar Sonar Cloud.
+En esta práctica he aprendido a utilizar los sockets para establecer conexión entre un cliente y un servidor, además se sigue profundizando en el uso de los paquetes yargs y chalk utilizados anteriormente. también se incluye el uso de pruebas mediante la metodología TDD.
 
 ### Bibliografía
 
