@@ -1,37 +1,31 @@
-## Welcome to GitHub Pages
+# Práctica 10. Cliente y servidor para una aplicación de procesamiento de notas de texto
 
-You can use the [editor on GitHub](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct10-async-sockets-eduardoreyes99/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+### Types
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### EventEmitter
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+### Parte Servidor
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+### Parte Cliente
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+### Conclusión
 
-[Link](url) and ![Image](src)
-```
+En esta práctica he aprendido a utilizar los paquetes yargs, chalks y la API síncrona de Node.js para gestión de ficheros para crear una aplicación interactiva que permita crear y eliminar ficheros en tiempo de ejecución, además se ha seguido el método de desarrollo TDD como viene siendo habitual y se ha incluido el cubrimiento de código utilizando GitHub Actions además de utilizar Sonar Cloud.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Bibliografía
 
-### Jekyll Themes
+[Events](https://nodejs.org/dist/latest-v16.x/docs/api/events.html#events_class_eventemitter)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct10-async-sockets-eduardoreyes99/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+[Net](https://nodejs.org/dist/latest-v16.x/docs/api/net.html#net_net_createserver_options_connectionlistener)
 
-### Support or Contact
+[Guión de la Práctica](https://ull-esit-inf-dsi-2021.github.io/prct10-async-sockets/)
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+[Apuntes Node.js](https://ull-esit-inf-dsi-2021.github.io/nodejs-theory/)
+
+[FS Documentation](https://nodejs.org/api/fs.html#fs_fs_existssync_path)
+
+[Yargs](https://www.npmjs.com/package/yargs)
