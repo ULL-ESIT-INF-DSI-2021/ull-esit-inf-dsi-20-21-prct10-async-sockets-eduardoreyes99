@@ -32,7 +32,6 @@ emitter.on('message', (message) => {
       break;
     case 'list':
       if (message.status) {
-        console.log(chalk.bgWhite.black('## NOTAS ENCONTRADAS ##'));
         const aux: string[] = message.notas;
         aux.forEach( (elemento) => {
           const notaObj = JSON.parse(elemento);
@@ -46,8 +45,7 @@ emitter.on('message', (message) => {
       if (message.status) {
         const nota = message.notas[0];
         const notaObj = JSON.parse(nota);
-        console.log(chalk.keyword(notaObj.color)('>> TITULO -> ' +
-          notaObj.title));
+        console.log(chalk.keyword(notaObj.color)(notaObj.title));
         console.log(chalk.keyword(notaObj.color)(notaObj.body));
       } else {
         console.log(chalk.red('No se pudo leer la nota'));
