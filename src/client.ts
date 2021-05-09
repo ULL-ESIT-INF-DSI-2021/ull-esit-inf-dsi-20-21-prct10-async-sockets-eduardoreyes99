@@ -86,17 +86,17 @@ yargs.command({
   handler(argv) {
     if (typeof argv.user === 'string' && typeof argv.title === 'string' &&
     typeof argv.body === 'string' && typeof argv.color === 'string') {
-      const inputData: RequestType = {
+      const entrada: RequestType = {
         type: 'add',
         user: argv.user,
         title: argv.title,
         body: argv.body,
         color: argv.color,
       };
-      console.log('Opcion: Add note');
-      client.write(`${JSON.stringify(inputData)}\n`);
+      console.log('Añadiendo nota');
+      client.write(`${JSON.stringify(entrada)}\n`);
     } else {
-      console.log(chalk.red('ERROR: Argumentos no validos'));
+      console.log(chalk.red('Argumentos no válidos'));
     }
   },
 });
@@ -122,15 +122,15 @@ yargs.command({
   },
   handler(argv) {
     if (typeof argv.user === 'string' && typeof argv.title === 'string') {
-      const inputData: RequestType = {
+      const entrada: RequestType = {
         type: 'remove',
         user: argv.user,
         title: argv.title,
       };
-      console.log('Opcion: Delete note');
-      client.write(`${JSON.stringify(inputData)}\n`);
+      console.log('Eliminando nota');
+      client.write(`${JSON.stringify(entrada)}\n`);
     } else {
-      console.log(chalk.red('ERROR: Argumentos no validos'));
+      console.log(chalk.red('Argumentos no validos'));
     }
   },
 });
@@ -167,17 +167,17 @@ yargs.command({
   handler(argv) {
     if (typeof argv.user === 'string' && typeof argv.title === 'string' &&
     typeof argv.body === 'string' && typeof argv.color === 'string') {
-      const inputData: RequestType = {
+      const entrada: RequestType = {
         type: 'edit',
         user: argv.user,
         title: argv.title,
         body: argv.body,
         color: argv.color,
       };
-      console.log('Opcion: Modify note');
-      client.write(`${JSON.stringify(inputData)}\n`);
+      console.log('Modificando una nota');
+      client.write(`${JSON.stringify(entrada)}\n`);
     } else {
-      console.log(chalk.red('ERROR: Argumentos no validos'));
+      console.log(chalk.red('Argumentos no validos'));
     }
   },
 });
@@ -203,15 +203,15 @@ yargs.command({
   },
   handler(argv) {
     if (typeof argv.user === 'string' && typeof argv.title === 'string') {
-      const inputData: RequestType = {
+      const entrada: RequestType = {
         type: 'read',
         user: argv.user,
         title: argv.title,
       };
-      console.log('Opcion: Read note');
-      client.write(`${JSON.stringify(inputData)}\n`);
+      console.log('Leyendo una nota');
+      client.write(`${JSON.stringify(entrada)}\n`);
     } else {
-      console.log(chalk.red('ERROR: Argumentos no validos'));
+      console.log(chalk.red('Argumentos no validos'));
     }
   },
 });
@@ -232,14 +232,14 @@ yargs.command({
   },
   handler(argv) {
     if (typeof argv.user === 'string') {
-      const inputData: RequestType = {
+      const entrada: RequestType = {
         type: 'list',
         user: argv.user,
       };
-      console.log('Opcion: List note');
-      client.write(`${JSON.stringify(inputData)}\n`);
+      console.log('Listando las notas');
+      client.write(`${JSON.stringify(entrada)}\n`);
     } else {
-      console.log(chalk.red('ERROR: Argumentos no validos'));
+      console.log(chalk.red('Argumentos no validos'));
     }
   },
 });
