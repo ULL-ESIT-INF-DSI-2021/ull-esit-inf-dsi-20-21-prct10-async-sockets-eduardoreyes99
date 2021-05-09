@@ -9,5 +9,5 @@
     "src/eventEmitterClient.ts",
     "src/eventEmitterServer.ts"
   ],
-  "out": "./documentation"
+  "out": "./docs"
 }
